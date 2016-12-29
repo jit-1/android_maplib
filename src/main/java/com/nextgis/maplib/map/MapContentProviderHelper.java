@@ -38,6 +38,7 @@ import com.nextgis.maplib.datasource.DatabaseHelper;
 import com.nextgis.maplib.datasource.GeoPoint;
 import com.nextgis.maplib.util.Constants;
 import com.nextgis.maplib.util.GeoConstants;
+import com.nextgis.maplib.util.SettingsConstants;
 
 import java.io.File;
 import java.util.List;
@@ -66,7 +67,8 @@ public class MapContentProviderHelper
         File dbFullName;
         SharedPreferences sharedPreferences =
                 PreferenceManager.getDefaultSharedPreferences(context);
-        File defaultPath = getContext().getExternalFilesDir(KEY_PREF_MAP);
+        //File defaultPath = getContext().getExternalFilesDir(KEY_PREF_MAP);
+        File defaultPath = new File(SettingsConstants.DMS_PATH, SettingsConstants.KEY_PREF_MAP);
         if (defaultPath != null) {
             String mapPath = sharedPreferences.getString(KEY_PREF_MAP_PATH, defaultPath.getPath());
             dbFullName = new File(mapPath, DBNAME);
