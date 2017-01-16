@@ -68,7 +68,7 @@ public class MapContentProviderHelper
         SharedPreferences sharedPreferences =
                 PreferenceManager.getDefaultSharedPreferences(context);
         //File defaultPath = getContext().getExternalFilesDir(KEY_PREF_MAP);
-        File defaultPath = new File(SettingsConstants.DMS_PATH, SettingsConstants.KEY_PREF_MAP);
+        File defaultPath = new File(SettingsConstants.WORKING_DIR, SettingsConstants.KEY_PREF_MAP);
         if (defaultPath != null) {
             String mapPath = sharedPreferences.getString(KEY_PREF_MAP_PATH, defaultPath.getPath());
             dbFullName = new File(mapPath, DBNAME);
