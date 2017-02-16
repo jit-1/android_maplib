@@ -31,7 +31,7 @@ public interface SettingsConstants
     String ROOT                             = Environment.getExternalStorageDirectory().getAbsolutePath();
     String DMS_PATH                         = ROOT + "/DMS/";
     String WORKING_DIR                      = DMS_PATH + "Working/";
-    String KEY_PREF_MAP                     = "map";
+    String KEY_PREF_MAP                     = "gismap";
     String KEY_PREF_MAP_PATH                = "map_path";
     String KEY_PREF_LAST_SYNC_TIMESTAMP     = "last_sync_timestamp";
     String KEY_PREF_LOCATION_SOURCE         = "location_source";
