@@ -27,6 +27,7 @@ import android.os.Environment;
 
 public interface SettingsConstants
 {
+    String PHONE_NO                         = "";
     String ROOT                             = Environment.getExternalStorageDirectory().getAbsolutePath();
     String DMS_PATH                         = ROOT + "/DMS/";
     String KEY_PREF_MAP                     = "map";
